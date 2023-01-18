@@ -14,6 +14,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=agarwalshashwat&repo=meshashwatagarwal)
+
 <img src="https://github-readme-stats.vercel.app/api?username=agarwalshashwat&show_icons=true&theme=gotham" alt="github stats" width="48%" align="center"/>
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=agarwalshashwat&theme=dark" width="48%" >
