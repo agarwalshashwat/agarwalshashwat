@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=agarwalshashwat&repo=meshashwatagarwal)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=agarwalshashwat&repo=meshashwatagarwal)](https://github.com/agarwalshashwat/meshashwatagarwal)
 
 <img src="https://github-readme-stats.vercel.app/api?username=agarwalshashwat&show_icons=true&theme=gotham" alt="github stats" width="48%" align="center"/>
 
