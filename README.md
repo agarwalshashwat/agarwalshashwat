@@ -7,10 +7,10 @@
   <img src="https://komarev.com/ghpvc/?username=agarwalshashwat&label=Profile%20views&color=0e75b6&style=flat" alt="agarwalshashwat" />
 </p>
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=agarwalshashwat&show_icons=true&theme=gotham" alt="GitHub Stats" width="48.5%"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=agarwalshashwat&theme=gotham" alt="GitHub Streak" width="48.5%" />
-</p>
+</p> -->
 
 ---
 
