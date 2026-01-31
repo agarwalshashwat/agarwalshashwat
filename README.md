@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=agarwalshashwat&show_icons=true&theme=gotham&include_all_commits=true&count_private=true" alt="GitHub Stats" width="48%"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=agarwalshashwat&theme=gotham" alt="GitHub Streak" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=agarwalshashwat&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub Stats" width="48%"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=agarwalshashwat&theme=tokyonight" alt="GitHub Streak" width="48%" />
 </p>
 
 ---
@@ -36,7 +36,7 @@ Senior Python Backend Engineer with 4+ years of experience building and scaling 
 
 ### 📊 Most Used Languages
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=agarwalshashwat&layout=compact&theme=gotham&hide_border=true" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=agarwalshashwat&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
 </p>
 
 <!--
