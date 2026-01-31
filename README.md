@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=agarwalshashwat&show_icons=true&theme=dark" alt="GitHub Stats" width="48%"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=agarwalshashwat&show_icons=true&theme=gotham" alt="GitHub Stats" width="48%"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=agarwalshashwat&theme=dark" alt="GitHub Streak" width="48%" />
 </p>
 
@@ -36,9 +36,5 @@ Senior Python Backend Engineer with 4+ years of experience building and scaling 
 
 ### 📊 Most Used Languages
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=agarwalshashwat&layout=compact&theme=dark" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=agarwalshashwat&theme=gotham" alt="Top Languages" />
 </p>
-
-<!--
-**agarwalshashwat/agarwalshashwat** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
--->
