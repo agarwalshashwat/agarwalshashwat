@@ -1,22 +1,44 @@
-### Hi there 👋
+<h1 align="center">Hi there, I'm Shashwat Agarwal 👋</h1>
+<p align="center">
+  <strong>Senior Python Backend Engineer — AI & SaaS</strong>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=agarwalshashwat&label=Profile%20views&color=0e75b6&style=flat" alt="agarwalshashwat" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=agarwalshashwat&show_icons=true&theme=gotham&include_all_commits=true&count_private=true" alt="GitHub Stats" width="48%"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=agarwalshashwat&theme=gotham" alt="GitHub Streak" width="48%" />
+</p>
+
+---
+
+### 🚀 Professional Summary
+Senior Python Backend Engineer with 4+ years of experience building and scaling production-grade SaaS platforms in the MarTech domain. Currently leading backend development at **Idea Clan**, specialized in distributed systems, AI-driven automation, and LLM integrations.
+
+- 🔭 **Currently Working On:** Leading backend for **Lookfinity** (Scalable MarTech Platform).
+- 🧠 **AI Expertise:** OpenAI, Gemini, LangGraph, RAG, and Vector Search (MongoDB).
+- ⚙️ **Performance:** Scaled systems to launch 2,000+ ads per minute in production.
+- 📫 **Reach me:** [LinkedIn](https://www.linkedin.com/in/agarwalshashwat07) | [Email](mailto:agarwal.shashwat2012@gmail.com)
+- ⚡ **Fun Fact:** I'm more interested in food than coding! I’ve even ventured into the health-focused QSR space.
+
+---
+
+### 🛠️ Tech Stack & Tools
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=py,postgres,mongodb,fastapi,graphql,rabbitmq,aws,gcp,docker,git,linux,postman,grafana" />
+  </a>
+</p>
+
+---
+
+### 📊 Most Used Languages
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=agarwalshashwat&layout=compact&theme=gotham&hide_border=true" alt="Top Languages" />
+</p>
+
 <!--
 **agarwalshashwat/agarwalshashwat** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
 -->
-
-
-<img src="https://github-readme-stats.vercel.app/api?username=agarwalshashwat&show_icons=true&theme=gotham" alt="github stats" width="48%" align="center"/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=agarwalshashwat&theme=dark" width="48%" >
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=agarwalshashwat&theme=gotham)
