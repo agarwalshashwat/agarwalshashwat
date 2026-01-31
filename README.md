@@ -7,11 +7,9 @@
   <img src="https://komarev.com/ghpvc/?username=agarwalshashwat&label=Profile%20views&color=0e75b6&style=flat" alt="agarwalshashwat" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=agarwalshashwat&show_icons=true&theme=gotham" alt="GitHub Stats" width="48%"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=agarwalshashwat&theme=dark" alt="GitHub Streak" width="48%" />
-</p>
+![Stats](https://github-readme-stats.vercel.app/api?username=agarwalshashwat&show_icons=true&theme=gotham&cache_seconds=1800)
 
+![Streak](https://github-readme-streak-stats.herokuapp.com/?user=agarwalshashwat&theme=gotham)
 ---
 
 ### 🚀 Professional Summary
@@ -36,5 +34,5 @@ Senior Python Backend Engineer with 4+ years of experience building and scaling 
 
 ### 📊 Most Used Languages
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=agarwalshashwat&theme=gotham" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=agarwalshashwat&theme=gotham&layout=compact" alt="Top Languages" />
 </p>
