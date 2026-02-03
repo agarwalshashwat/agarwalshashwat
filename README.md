@@ -58,4 +58,3 @@
 - 🚀 Scaled production systems to handle massive traffic for global ad campaigns.
 
 </details> -->
-# OptimeleonAI-Assigment
