@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -191,7 +192,9 @@
       transition: all 0.2s;
     }
     .skill-tag:hover { border-color: var(--accent); color: var(--accent); }
+    .skill-tag i[class^="devicon"] { font-size: 1.05rem; flex-shrink: 0; line-height: 1; }
     .skill-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+    .skill-tag i[class^="devicon"] { font-size: 1.05rem; flex-shrink: 0; line-height: 1; }
 
     /* ─── EXPERIENCE ─── */
     .exp-item {
@@ -449,7 +452,7 @@
           <p>
             These days I call myself a <span class="highlight">vibecoder</span>: someone who uses
             AI as a creative and engineering force, while maintaining the technical depth to keep
-            output production-ready. B.Tech from <span class="highlight">AKTU (2021)</span>.
+            output production-ready. B.Tech in Computer Science from <span class="highlight">Krishna Engineering College, Ghaziabad &mdash; AKTU (2021)</span>.
           </p>
         </div>
       </div>
@@ -466,26 +469,32 @@
       <div class="skills-layout">
         <div></div>
         <div class="skills-grid fade-in" style="padding: 1rem 0 3rem;">
-          <div class="skill-tag"><span class="skill-dot" style="background:#3572A5"></span>Python</div>
+          <div class="skill-tag"><i class="devicon-python-plain colored"></i>Python</div>
           <div class="skill-tag"><span class="skill-dot" style="background:#c97a4e"></span>AI Engineering</div>
           <div class="skill-tag"><span class="skill-dot" style="background:#2d5a43"></span>LLMs &amp; Prompt Engineering</div>
           <div class="skill-tag"><span class="skill-dot" style="background:#6b4fbb"></span>Machine Learning</div>
           <div class="skill-tag"><span class="skill-dot" style="background:#00897B"></span>Conversational AI</div>
-          <div class="skill-tag"><span class="skill-dot" style="background:#e535ab"></span>GraphQL</div>
+          <div class="skill-tag"><i class="devicon-graphql-plain colored"></i>GraphQL</div>
           <div class="skill-tag"><span class="skill-dot" style="background:#d4a800"></span>ClickHouse</div>
-          <div class="skill-tag"><span class="skill-dot" style="background:#f29111"></span>MySQL</div>
-          <div class="skill-tag"><span class="skill-dot" style="background:#4db33d"></span>MongoDB</div>
-          <div class="skill-tag"><span class="skill-dot" style="background:#DC382D"></span>Redis</div>
-          <div class="skill-tag"><span class="skill-dot" style="background:#FF9900"></span>AWS</div>
-          <div class="skill-tag"><span class="skill-dot" style="background:#2496ED"></span>Docker</div>
-          <div class="skill-tag"><span class="skill-dot" style="background:#F05032"></span>Git</div>
-          <div class="skill-tag"><span class="skill-dot" style="background:#f9a826"></span>Linux</div>
+          <div class="skill-tag"><i class="devicon-mysql-original colored"></i>MySQL</div>
+          <div class="skill-tag"><i class="devicon-mongodb-plain colored"></i>MongoDB</div>
+          <div class="skill-tag"><i class="devicon-redis-plain colored"></i>Redis</div>
+          <div class="skill-tag"><i class="devicon-amazonwebservices-original colored"></i>AWS</div>
+          <div class="skill-tag"><i class="devicon-docker-plain colored"></i>Docker</div>
+          <div class="skill-tag"><i class="devicon-git-plain colored"></i>Git</div>
+          <div class="skill-tag"><i class="devicon-linux-plain colored"></i>Linux</div>
           <div class="skill-tag"><span class="skill-dot" style="background:#5865F2"></span>WebSockets</div>
           <div class="skill-tag"><span class="skill-dot" style="background:#FF4154"></span>Celery</div>
           <div class="skill-tag"><span class="skill-dot" style="background:#714B67"></span>Odoo</div>
-          <div class="skill-tag"><span class="skill-dot" style="background:#092E20"></span>Django</div>
-          <div class="skill-tag"><span class="skill-dot" style="background:#61DAFB"></span>React</div>
+          <div class="skill-tag"><i class="devicon-django-plain colored"></i>Django</div>
+          <div class="skill-tag"><i class="devicon-react-original colored"></i>React</div>
           <div class="skill-tag"><span class="skill-dot" style="background:#1a1410"></span>Entrepreneurship</div>
+          <div class="skill-tag"><i class="devicon-fastapi-plain colored"></i>FastAPI</div>
+          <div class="skill-tag"><i class="devicon-postgresql-plain colored"></i>PostgreSQL</div>
+          <div class="skill-tag"><span class="skill-dot" style="background:#e535ab"></span>RAG</div>
+          <div class="skill-tag"><span class="skill-dot" style="background:#4db33d"></span>Vector Search</div>
+          <div class="skill-tag"><i class="devicon-grafana-original colored"></i>Grafana</div>
+          <div class="skill-tag"><i class="devicon-googlecloud-plain colored"></i>GCP</div>
         </div>
       </div>
     </div>
@@ -508,12 +517,15 @@
           <div class="exp-company">Lookfinity &middot; Idea Clan</div>
           <div class="exp-role">SDE II &mdash; Team Lead</div>
           <div class="exp-location">Panchkula, Haryana &middot; On-site</div>
-          <p class="exp-desc">Promoted after a year of strong individual contribution. Built and now lead a team of 5 engineers on the Lookfinity Martech platform. Own the full planning cycle &mdash; from translating business requirements into features and architecture, to delivery. Drive conversational AI, LLM integration, and high-performance data pipeline work across the platform.</p>
+          <p class="exp-desc">Promoted to SDE II &amp; Team Lead after a year of strong contribution. Lead a team of 5 engineers across two product lines: the <strong>Lookfinity Ad Launch Platform</strong> and <strong>Fab Funnel</strong> (industry intelligence &amp; creative analytics). Built the company&rsquo;s first Python-based reporting service for Google Ads 360; designed <strong>Playground</strong>, a centralised service enabling simultaneous ad launches across Meta, TikTok, Google, BigO and Newsbreak &mdash; scaled to <strong>2,000 ads per minute</strong> in production; built AI-driven creative generation using geography, keywords and psychological triggers; designed a custom <strong>video hashing system</strong> to identify similar creatives; and built <strong>Industry Insights</strong>, an ethical ad-library intelligence service aggregating data from Meta and Google Ads Library.</p>
           <div class="exp-skills">
             <span class="exp-skill">Python</span>
+            <span class="exp-skill">FastAPI</span>
             <span class="exp-skill">GraphQL</span>
-            <span class="exp-skill">ClickHouse</span>
-            <span class="exp-skill">Conversational AI</span>
+            <span class="exp-skill">PostgreSQL</span>
+            <span class="exp-skill">MongoDB</span>
+            <span class="exp-skill">Grafana</span>
+            <span class="exp-skill">OpenAI</span>
             <span class="exp-skill">LLMs</span>
             <span class="exp-skill">Team Leadership</span>
           </div>
@@ -545,7 +557,7 @@
           <div class="exp-company">Samsride</div>
           <div class="exp-role">Software Engineer &mdash; Contract</div>
           <div class="exp-location">Remote &middot; 3 mos</div>
-          <p class="exp-desc">Short-term contract role building features for a ride-sharing platform. Worked across Django (back-end) and React (front-end), delivering focused improvements on a tight timeline.</p>
+          <p class="exp-desc">Short-term contract role as a Full-Stack Python Developer on the Innovations Refund platform. Integrated backend APIs and supported production feature delivery, working across Django (back-end) and React (front-end) on a tight timeline.</p>
           <div class="exp-skills">
             <span class="exp-skill">Python</span>
             <span class="exp-skill">Django</span>
