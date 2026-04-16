@@ -329,6 +329,7 @@
     }
     .venture-tag-hiatus { background: rgba(45,90,67,0.1); color: var(--green); }
     .venture-tag-pause  { background: rgba(201,122,78,0.1); color: var(--accent); }
+    .venture-tag-active { background: var(--green); color: #fff; }
     @media (max-width: 768px) {
       .venture-layout { grid-template-columns: 1fr; gap: 1.5rem; }
       .venture-item   { grid-template-columns: 1fr; gap: 1rem; }
@@ -656,7 +657,7 @@
       </div>
 
       <!-- 02: Fiber Fruit Cups -->
-      <div class="venture-item fade-in" style="border-bottom: none; padding-bottom: 3rem;">
+      <div class="venture-item fade-in">
         <div class="venture-item-meta">
           <div class="venture-num">02</div>
           <div class="venture-founded">2025</div>
@@ -700,6 +701,59 @@
             <span class="value-pill">Mandi-sourced</span>
             <span class="value-pill">Gut-health focus</span>
             <span class="value-pill">Learnings banked</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03: ClipMark -->
+      <div class="venture-item fade-in" style="border-bottom: none; padding-bottom: 3rem;">
+        <div class="venture-item-meta">
+          <div class="venture-num">03</div>
+          <div class="venture-founded">Idea: Late 2022<br>Build: Mar 2026</div>
+          <span class="venture-tag venture-tag-active">Active Build &middot; Going Live</span>
+          <a href="https://clipmark.mithahara.com" target="_blank" rel="noopener noreferrer" class="venture-link" style="margin-top:0.8rem;">clipmark.mithahara.com &rarr;</a>
+        </div>
+        <div class="venture-item-body">
+          <div class="venture-item-name">ClipMark</div>
+          <div class="venture-stat-strip">
+            <div class="venture-stat"><div class="stat-num">4+</div><div class="stat-lbl">Clip tag types</div></div>
+            <div class="venture-stat"><div class="stat-num">1 min</div><div class="stat-lbl">Revisit window</div></div>
+            <div class="venture-stat"><div class="stat-num">+30s</div><div class="stat-lbl">Extend per clip</div></div>
+            <div class="venture-stat"><div class="stat-num">AI</div><div class="stat-lbl">Group &amp; summarize</div></div>
+          </div>
+
+          <div class="venture-callout">
+            <div class="venture-callout-label">&#9733; The Revisit Feature</div>
+            <p>Mark 6 sections in an 11-hour video. Hit Revisit. ClipMark takes you to each one for exactly 60 seconds &mdash; extend by 30s if you need more. Zero scrubbing. Pure signal.</p>
+          </div>
+
+          <p>
+            In late 2022, deep in long YouTube tutorials as a junior engineer trying to level up fast, I ran into the same wall constantly:
+            <span class="highlight">YouTube doesn&rsquo;t actually remember where you were</span>. Come back after two days and you land somewhere
+            random. There was no way to leave yourself a note &mdash; &ldquo;WebSockets explained here, come back to this&rdquo; &mdash; that
+            would actually surface when you needed it. The idea sat with me for years. In March 2026, I finally built it.
+          </p>
+          <p>
+            ClipMark is a Chrome extension that lets you <span class="highlight">bookmark and tag sections of any YouTube video</span> &mdash;
+            Important, Note, Callout, and more. The centrepiece is <span class="highlight">Revisit Mode</span>: if you&rsquo;ve marked
+            6 timestamps in a 30-minute video, Revisit plays each one for 60 seconds in sequence &mdash; a structured review with zero manual
+            scrubbing. Extend any section by 30 seconds if you need to sit with it longer.
+            <span class="highlight">AI features</span> layer on top: grouping related clips and summarising your notes across a video or playlist.
+          </p>
+          <p>
+            Built for <span class="highlight">students</span> who learn from YouTube because it&rsquo;s free and want notes they can actually
+            revise, <span class="highlight">content creators</span> who prep by marking key moments in past interviews before recording,
+            and <span class="highlight">developers</span> who want to flag a specific deep-dive in a long conference talk without losing it.
+            Free educational content is everywhere &mdash; the tooling to learn from it properly has always lagged behind.
+          </p>
+
+          <div class="value-pills">
+            <span class="value-pill">YouTube-native</span>
+            <span class="value-pill">Bookmark &amp; Tag</span>
+            <span class="value-pill">Revisit Mode</span>
+            <span class="value-pill">AI-powered notes</span>
+            <span class="value-pill">Student-first</span>
+            <span class="value-pill">Creator-ready</span>
           </div>
         </div>
       </div>
