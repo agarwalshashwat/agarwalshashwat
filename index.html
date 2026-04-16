@@ -3,318 +3,445 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Shashwat Agarwal — SDE II & AI Engineer." />
+  <meta name="description" content="Shashwat Agarwal — SDE II & AI Engineer. Building AI-powered solutions with 4.5+ years of software development experience." />
   <title>Shashwat Agarwal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
       --accent:  #00d4ff;
       --accent2: #7c3aed;
-      --border:  rgba(255,255,255,0.08);
-      --text:    #eaeaf4;
-      --muted:   #4a4a6a;
-      --sub:     #8888aa;
+      --glass-bg: rgba(255,255,255,0.05);
+      --glass-border: rgba(255,255,255,0.12);
+      --text-primary: #f0f0f0;
+      --text-secondary: #94a3b8;
     }
 
-    html {
+    html { scroll-behavior: smooth; }
+
+    body {
       font-family: 'Inter', sans-serif;
-      background: #06060e;
-      color: var(--text);
-      scroll-behavior: smooth;
+      background: #050510;
+      color: var(--text-primary);
+      overflow-x: hidden;
     }
 
-    body { min-height: 100vh; }
-
-    body::before {
-      content: '';
-      position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    /* ── Background ── */
+    .bg-gradient {
+      position: fixed; inset: 0; z-index: 0;
       background:
-        radial-gradient(ellipse 55% 45% at 0% 0%,    rgba(124,58,237,0.14) 0%, transparent 65%),
-        radial-gradient(ellipse 45% 40% at 100% 100%, rgba(0,212,255,0.08)  0%, transparent 65%);
+        radial-gradient(ellipse at 20% 30%, rgba(124,58,237,0.25) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 70%, rgba(0,212,255,0.15) 0%, transparent 50%),
+        #050510;
     }
 
-    /* NAV */
+    .blob {
+      position: fixed; border-radius: 50%;
+      filter: blur(80px); opacity: 0.35;
+      animation: float 9s ease-in-out infinite; z-index: 0;
+    }
+    .blob-1 { width:420px; height:420px; background:rgba(124,58,237,0.35); top:-120px; left:-120px; animation-delay:0s; }
+    .blob-2 { width:360px; height:360px; background:rgba(0,212,255,0.2);   bottom:8%; right:4%;   animation-delay:-3s; }
+    .blob-3 { width:280px; height:280px; background:rgba(236,72,153,0.15); top:50%;  left:42%;   animation-delay:-6s; }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0) scale(1); }
+      50%      { transform: translateY(-28px) scale(1.04); }
+    }
+
+    /* ── Layout ── */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; position: relative; z-index: 1; }
+
+    /* ── Nav ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      height: 52px;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 2.4rem;
-      background: rgba(6,6,14,0.82);
-      backdrop-filter: blur(18px);
-      border-bottom: 1px solid var(--border);
+      padding: 1.1rem 2rem;
+      background: rgba(5,5,16,0.75);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--glass-border);
+      display: flex; justify-content: space-between; align-items: center;
     }
-    .nav-name {
-      font-size: 0.7rem; font-weight: 700;
-      letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted);
-    }
-    .nav-badge {
-      display: flex; align-items: center; gap: 0.45rem;
-      font-size: 0.68rem; font-weight: 500; color: var(--accent);
-    }
-    .nav-dot {
-      width: 5px; height: 5px; border-radius: 50%;
-      background: var(--accent);
-      animation: blink 2.4s ease-in-out infinite;
-    }
-    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
-
-    /* CONTAINER */
-    .wrap {
-      position: relative; z-index: 1;
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-    /* SECTIONS */
-    section { padding: 5rem 0; }
-    section + section { border-top: 1px solid var(--border); }
-
-    .sec-label {
-      font-size: 0.6rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.22em;
-      color: var(--muted); margin-bottom: 1.6rem;
-    }
-
-    /* HERO */
-    #hero { padding-top: 7rem; padding-bottom: 5rem; }
-
-    .eyebrow {
-      font-size: 0.62rem; font-weight: 600;
-      text-transform: uppercase; letter-spacing: 0.22em;
-      color: var(--muted); margin-bottom: 0.9rem;
-    }
-
-    h1 {
-      font-size: clamp(2.6rem, 6vw, 4rem);
-      font-weight: 800; line-height: 1.05; letter-spacing: -0.03em;
-      margin-bottom: 0.8rem;
-    }
-    .grad {
-      background: linear-gradient(115deg, #fff 15%, var(--accent) 55%, var(--accent2) 95%);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-    }
-
-    .hero-role { font-size: 0.88rem; color: var(--sub); margin-bottom: 1.2rem; line-height: 1.5; }
-    .hero-role b { color: var(--text); font-weight: 600; }
-
-    .hero-bio {
-      font-size: 0.82rem; color: var(--muted); line-height: 1.9;
-      max-width: 520px; margin-bottom: 2rem;
-    }
-
-    .stats {
-      display: flex; gap: 2.2rem; margin-bottom: 2rem;
-      padding-bottom: 2rem; border-bottom: 1px solid var(--border);
-    }
-    .s-val {
-      font-size: 1.5rem; font-weight: 800;
+    .nav-logo {
+      font-size: 1.15rem; font-weight: 800;
       background: linear-gradient(135deg, var(--accent), var(--accent2));
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
-    .s-lbl { font-size: 0.58rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.12em; margin-top: 0.1rem; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
 
-    .socials { display: flex; gap: 0.6rem; flex-wrap: wrap; }
-    .soc {
-      display: inline-flex; align-items: center; gap: 0.4rem;
-      padding: 0.42rem 0.95rem; border-radius: 7px;
-      border: 1px solid var(--border); background: rgba(255,255,255,0.02);
-      font-size: 0.72rem; font-weight: 500; color: var(--sub);
-      text-decoration: none; transition: all 0.2s;
+    /* ── Hero ── */
+    .hero { min-height: 100vh; display: flex; align-items: center; padding-top: 80px; }
+    .hero-content { max-width: 760px; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--glass-bg); border: 1px solid var(--glass-border);
+      border-radius: 50px; padding: 0.4rem 1.1rem;
+      font-size: 0.82rem; color: var(--accent);
+      margin-bottom: 2rem; backdrop-filter: blur(10px);
     }
-    .soc:hover { border-color: var(--accent); color: var(--accent); background: rgba(0,212,255,0.04); }
-
-    /* SKILLS */
-    .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .tag {
-      font-size: 0.7rem; padding: 0.3rem 0.8rem;
-      border-radius: 5px; border: 1px solid var(--border);
-      color: var(--sub); background: rgba(255,255,255,0.02);
-      transition: all 0.2s;
+    .hero-badge::before {
+      content: ''; width: 8px; height: 8px;
+      background: var(--accent); border-radius: 50%;
+      animation: pulse-dot 2s infinite;
     }
-    .tag:hover { border-color: rgba(0,212,255,0.4); color: var(--accent); }
-
-    /* EXPERIENCE */
-    .exps { display: flex; flex-direction: column; gap: 1.6rem; }
-    .exp { display: grid; grid-template-columns: 6px 1fr; gap: 0 1rem; align-items: start; }
-    .edot { width: 6px; height: 6px; border-radius: 50%; margin-top: 0.42rem; }
-    .exp-co   { font-size: 0.82rem; font-weight: 700; color: var(--text); }
-    .exp-role { font-size: 0.72rem; color: var(--accent); font-weight: 600; margin-top: 0.1rem; }
-    .exp-info { font-size: 0.68rem; color: var(--muted); margin-top: 0.2rem; line-height: 1.5; }
-    .exp-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.5rem; }
-    .exp-tag  {
-      font-size: 0.63rem; padding: 0.18rem 0.6rem;
-      border-radius: 4px; border: 1px solid rgba(0,212,255,0.15);
-      color: rgba(0,212,255,0.7); background: rgba(0,212,255,0.04);
+    @keyframes pulse-dot {
+      0%,100% { opacity:1; transform:scale(1); }
+      50%      { opacity:0.4; transform:scale(1.4); }
     }
 
-    /* EDUCATION */
-    .edu-row {
-      display: flex; align-items: baseline;
-      justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
+    h1 {
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      font-weight: 900; line-height: 1.05;
+      margin-bottom: 1rem; letter-spacing: -0.025em;
     }
-    .edu-degree { font-size: 0.85rem; font-weight: 700; color: var(--text); }
-    .edu-inst   { font-size: 0.75rem; color: var(--sub); margin-top: 0.2rem; }
-    .edu-year   { font-size: 0.7rem; color: var(--muted); }
+    .gradient-text {
+      background: linear-gradient(135deg, #fff 0%, var(--accent) 55%, var(--accent2) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
 
-    /* FOOTER */
+    .hero-title  { font-size: clamp(1.05rem, 2.5vw, 1.35rem); color: var(--text-secondary); font-weight: 400; margin-bottom: 1.5rem; line-height: 1.6; }
+    .hero-desc   { font-size: 1rem; color: var(--text-secondary); line-height: 1.85; max-width: 610px; margin-bottom: 2.5rem; }
+
+    .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.8rem 1.8rem; border-radius: 50px;
+      font-size: 0.93rem; font-weight: 600;
+      cursor: pointer; text-decoration: none; transition: all 0.3s;
+    }
+    .btn-primary  { background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #fff; border: none; }
+    .btn-primary:hover  { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(0,212,255,0.3); }
+    .btn-secondary { background: var(--glass-bg); color: var(--text-primary); border: 1px solid var(--glass-border); backdrop-filter: blur(10px); }
+    .btn-secondary:hover { transform: translateY(-2px); border-color: var(--accent); color: var(--accent); }
+
+    /* ── Sections ── */
+    section { padding: 6rem 0; }
+
+    .section-label {
+      font-size: 0.76rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.18em;
+      color: var(--accent); margin-bottom: 0.6rem;
+    }
+    .section-title {
+      font-size: clamp(1.9rem, 4vw, 2.7rem);
+      font-weight: 800; margin-bottom: 3rem; letter-spacing: -0.02em;
+    }
+
+    /* ── Glass Card ── */
+    .glass-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+      backdrop-filter: blur(20px);
+      padding: 2rem;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    .glass-card:hover { transform: translateY(-4px); border-color: rgba(0,212,255,0.3); }
+
+    /* ── About ── */
+    .about-grid { display: grid; grid-template-columns: 220px 1fr; gap: 2.5rem; align-items: start; }
+
+    .about-avatar {
+      background: linear-gradient(135deg, var(--accent2), var(--accent));
+      border-radius: 20px; aspect-ratio: 1;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 5rem; font-weight: 900; color: rgba(255,255,255,0.9);
+      user-select: none;
+    }
+
+    .about-text p { color: var(--text-secondary); line-height: 1.85; margin-bottom: 1rem; font-size: 0.95rem; }
+    .about-text p:last-of-type { margin-bottom: 0; }
+    .highlight { color: var(--accent); font-weight: 600; }
+
+    .stat-row  { display: flex; gap: 2.5rem; margin-top: 1.8rem; flex-wrap: wrap; }
+    .stat-num  { font-size: 1.9rem; font-weight: 800; background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .stat-lbl  { font-size: 0.72rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.07em; margin-top: 0.1rem; }
+
+    /* ── Skills ── */
+    .skills-grid { display: flex; flex-wrap: wrap; gap: 0.9rem; }
+
+    .skill-tag {
+      display: flex; align-items: center; gap: 0.6rem;
+      background: var(--glass-bg); border: 1px solid var(--glass-border);
+      border-radius: 12px; padding: 0.65rem 1.15rem;
+      font-size: 0.88rem; font-weight: 500; color: var(--text-primary);
+      backdrop-filter: blur(10px); transition: all 0.3s;
+    }
+    .skill-tag:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+    .skill-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+    /* ── Experience ── */
+    .timeline { position: relative; display: flex; flex-direction: column; gap: 1.5rem; padding-left: 0.5rem; }
+    .timeline::before {
+      content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px;
+      background: linear-gradient(to bottom, var(--accent), var(--accent2), transparent);
+    }
+    .timeline-item { padding-left: 2.5rem; position: relative; }
+    .timeline-item::before {
+      content: ''; position: absolute; left: -5px; top: 1.6rem;
+      width: 12px; height: 12px; border-radius: 50%;
+      background: var(--accent); border: 2px solid #050510;
+      box-shadow: 0 0 12px var(--accent);
+    }
+
+    .exp-company { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.25rem; }
+    .exp-role    { font-size: 0.93rem; color: var(--accent); font-weight: 600; margin-bottom: 0.2rem; }
+    .exp-period  { font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.8rem; }
+    .exp-desc    { font-size: 0.87rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 0.8rem; }
+
+    .exp-skills { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .exp-skill  {
+      font-size: 0.73rem; padding: 0.22rem 0.7rem;
+      background: rgba(0,212,255,0.08); border: 1px solid rgba(0,212,255,0.2);
+      border-radius: 50px; color: var(--accent);
+    }
+
+    /* ── Contact ── */
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+
+    a.contact-card {
+      display: flex; flex-direction: column; align-items: center;
+      text-align: center; gap: 0.75rem; padding: 2rem;
+      text-decoration: none; color: var(--text-primary);
+    }
+    .contact-icon {
+      width: 54px; height: 54px; border-radius: 15px;
+      background: linear-gradient(135deg, var(--accent2), var(--accent));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; font-weight: 700;
+    }
+    .contact-lbl { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-secondary); }
+    .contact-val { font-size: 0.88rem; font-weight: 600; word-break: break-all; }
+
+    /* ── Footer ── */
     footer {
+      text-align: center; padding: 2rem;
+      color: var(--text-secondary); font-size: 0.82rem;
+      border-top: 1px solid var(--glass-border);
       position: relative; z-index: 1;
-      border-top: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: space-between;
-      flex-wrap: wrap; gap: 0.5rem;
-      padding: 1.2rem 2.4rem;
-      font-size: 0.62rem; color: var(--muted);
     }
-    footer a { color: var(--accent); text-decoration: none; }
 
-    /* RESPONSIVE */
-    @media (max-width: 600px) {
-      nav { padding: 0 1.2rem; }
-      .wrap { padding: 0 1.2rem; }
-      section { padding: 3.2rem 0; }
-      #hero { padding-top: 5.5rem; }
-      h1 { font-size: clamp(2rem, 10vw, 3rem); }
-      .stats { gap: 1.4rem; }
-      footer { padding: 1rem 1.2rem; flex-direction: column; align-items: flex-start; }
+    /* ── Scroll animations ── */
+    .fade-in { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .about-avatar { width: 100px; height: 100px; font-size: 2.5rem; }
+      .nav-links { display: none; }
     }
   </style>
 </head>
 <body>
 
+  <div class="bg-gradient"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <!-- NAV -->
   <nav>
-    <span class="nav-name">Shashwat Agarwal</span>
-    <span class="nav-badge"><span class="nav-dot"></span>Open to opportunities</span>
+    <div class="nav-logo">SA</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
-  <div class="wrap">
-
-    <!-- HERO -->
-    <section id="hero">
-      <p class="eyebrow">Portfolio · 2026</p>
-      <h1><span class="grad">SDE II &amp;<br>AI Engineer</span></h1>
-      <p class="hero-role"><b>Python · Backend · Martech</b> &nbsp;·&nbsp; Panchkula, India</p>
-      <p class="hero-bio">
-        4.5+ years building scalable backends and AI-powered systems. I operate at the
-        intersection of engineering discipline and AI creativity — shipping things that
-        actually work, catching what AI misses. Also a food entrepreneur.
-      </p>
-      <div class="stats">
-        <div><div class="s-val">4.5+</div><div class="s-lbl">Years Exp</div></div>
-        <div><div class="s-val">4</div><div class="s-lbl">Companies</div></div>
-        <div><div class="s-val">∞</div><div class="s-lbl">Curiosity</div></div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">Open to opportunities</div>
+        <h1><span class="gradient-text">Shashwat<br>Agarwal</span></h1>
+        <p class="hero-title">SDE II &nbsp;·&nbsp; AI Engineer &nbsp;·&nbsp; Vibecoder</p>
+        <p class="hero-desc">
+          4.5+ years of building robust backend systems and AI-powered products.
+          I operate at the intersection of engineering discipline and AI creativity —
+          shipping things that actually work, with the depth to catch what AI misses.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#experience" class="btn btn-secondary">View Experience</a>
+        </div>
       </div>
-      <div class="socials">
-        <a href="mailto:agarwal.shashwat2012@gmail.com" class="soc">✉ Email</a>
-        <a href="https://www.linkedin.com/in/agarwalshashwat07/" target="_blank" rel="noopener noreferrer" class="soc">in LinkedIn</a>
-        <a href="https://github.com/agarwalshashwat" target="_blank" rel="noopener noreferrer" class="soc">⌥ GitHub</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <p class="section-label fade-in">About Me</p>
+      <h2 class="section-title fade-in">Who I Am</h2>
+      <div class="glass-card about-grid fade-in">
+        <div class="about-avatar">S</div>
+        <div class="about-text">
+          <p>
+            I'm a Software Development Engineer with 4.5+ years of experience building scalable backend systems,
+            data pipelines, and AI-powered products. My career has taken me across fast-moving startups in the
+            Martech and mobility space, and I hold a <span class="highlight">B.Tech from AKTU (2021)</span>.
+          </p>
+          <p>
+            Beyond code, I've also built and run a <span class="highlight">food business</span> — which taught me
+            how to think beyond features and into real-world impact, customer obsession, and operational excellence.
+          </p>
+          <p>
+            These days, I call myself a <span class="highlight">vibecoder</span>: someone who leverages AI as a
+            creative and engineering force, while using deep technical knowledge to keep the output production-ready
+            and free of the subtle mistakes AI tends to introduce.
+          </p>
+          <div class="stat-row">
+            <div><div class="stat-num">4.5+</div><div class="stat-lbl">Years Experience</div></div>
+            <div><div class="stat-num">4</div><div class="stat-lbl">Companies</div></div>
+            <div><div class="stat-num">∞</div><div class="stat-lbl">Curiosity</div></div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SKILLS -->
-    <section id="skills">
-      <p class="sec-label">Tech Stack</p>
-      <div class="tags">
-        <span class="tag">Python</span>
-        <span class="tag">AI Engineering</span>
-        <span class="tag">LLMs</span>
-        <span class="tag">Prompt Engineering</span>
-        <span class="tag">Machine Learning</span>
-        <span class="tag">Conversational AI</span>
-        <span class="tag">GraphQL</span>
-        <span class="tag">ClickHouse</span>
-        <span class="tag">MySQL</span>
-        <span class="tag">MongoDB</span>
-        <span class="tag">Linux</span>
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <p class="section-label fade-in">Tech Stack</p>
+      <h2 class="section-title fade-in">Skills & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-tag fade-in"><span class="skill-dot" style="background:#3572A5"></span>Python</div>
+        <div class="skill-tag fade-in"><span class="skill-dot" style="background:#00d4ff"></span>AI Engineering</div>
+        <div class="skill-tag fade-in"><span class="skill-dot" style="background:#00d4ff"></span>LLMs & Prompt Engineering</div>
+        <div class="skill-tag fade-in"><span class="skill-dot" style="background:#00d4ff"></span>Machine Learning</div>
+        <div class="skill-tag fade-in"><span class="skill-dot" style="background:#00d4ff"></span>Conversational AI</div>
+        <div class="skill-tag fade-in"><span class="skill-dot" style="background:#e535ab"></span>GraphQL</div>
+        <div class="skill-tag fade-in"><span class="skill-dot" style="background:#FFCC01"></span>ClickHouse</div>
+        <div class="skill-tag fade-in"><span class="skill-dot" style="background:#f29111"></span>MySQL</div>
+        <div class="skill-tag fade-in"><span class="skill-dot" style="background:#4db33d"></span>MongoDB</div>
+        <div class="skill-tag fade-in"><span class="skill-dot" style="background:#f9a826"></span>Linux</div>
+        <div class="skill-tag fade-in"><span class="skill-dot" style="background:#7c3aed"></span>Entrepreneurship &amp; Food Business</div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience">
-      <p class="sec-label">Experience</p>
-      <div class="exps">
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <p class="section-label fade-in">Career</p>
+      <h2 class="section-title fade-in">Experience</h2>
+      <div class="timeline">
 
-        <div class="exp">
-          <div class="edot" style="background:var(--accent)"></div>
-          <div>
-            <div class="exp-co">Lookfinity &middot; Idea Clan</div>
+        <div class="timeline-item fade-in">
+          <div class="glass-card">
+            <div class="exp-company">Lookfinity · Idea Clan</div>
             <div class="exp-role">SDE II</div>
-            <div class="exp-info">Apr 2024 – Present &nbsp;·&nbsp; Panchkula, India (On-site)</div>
-            <div class="exp-tags">
-              <span class="exp-tag">Python</span>
-              <span class="exp-tag">GraphQL</span>
-              <span class="exp-tag">ClickHouse</span>
-              <span class="exp-tag">Conversational AI</span>
+            <div class="exp-period">Apr 2024 – Present &nbsp;·&nbsp; Panchkula, Haryana (On-site)</div>
+            <p class="exp-desc">Building NextGen Martech Solutions. Leading backend development for high-performance data pipelines and AI-powered analytics infrastructure.</p>
+            <div class="exp-skills">
+              <span class="exp-skill">Python</span>
+              <span class="exp-skill">GraphQL</span>
+              <span class="exp-skill">ClickHouse</span>
+              <span class="exp-skill">Conversational AI</span>
             </div>
           </div>
         </div>
 
-        <div class="exp">
-          <div class="edot" style="background:var(--accent2)"></div>
-          <div>
-            <div class="exp-co">Lookfinity &middot; Idea Clan</div>
-            <div class="exp-role" style="color:var(--sub)">Python Developer</div>
-            <div class="exp-info">Feb 2023 – Apr 2024 &nbsp;·&nbsp; Panchkula, India (On-site)</div>
-            <div class="exp-tags">
-              <span class="exp-tag">Python</span>
-              <span class="exp-tag">MySQL</span>
-              <span class="exp-tag">MongoDB</span>
+        <div class="timeline-item fade-in">
+          <div class="glass-card">
+            <div class="exp-company">Lookfinity · Idea Clan</div>
+            <div class="exp-role">Python Developer</div>
+            <div class="exp-period">Feb 2023 – Apr 2024 &nbsp;·&nbsp; 1 yr 3 mos &nbsp;·&nbsp; Panchkula, Haryana (On-site)</div>
+            <div class="exp-skills">
+              <span class="exp-skill">Python</span>
+              <span class="exp-skill">MySQL</span>
+              <span class="exp-skill">MongoDB</span>
             </div>
           </div>
         </div>
 
-        <div class="exp">
-          <div class="edot" style="background:var(--accent2)"></div>
-          <div>
-            <div class="exp-co">Samsride</div>
-            <div class="exp-role" style="color:var(--sub)">Software Engineer &nbsp;·&nbsp; Freelance</div>
-            <div class="exp-info">Dec 2022 – Feb 2023 &nbsp;·&nbsp; Remote</div>
-            <div class="exp-tags">
-              <span class="exp-tag">Python</span>
-              <span class="exp-tag">Linux</span>
+        <div class="timeline-item fade-in">
+          <div class="glass-card">
+            <div class="exp-company">Samsride</div>
+            <div class="exp-role">Software Engineer (Freelance)</div>
+            <div class="exp-period">Dec 2022 – Feb 2023 &nbsp;·&nbsp; 3 mos &nbsp;·&nbsp; Remote</div>
+            <div class="exp-skills">
+              <span class="exp-skill">Python</span>
+              <span class="exp-skill">Linux</span>
             </div>
           </div>
         </div>
 
-        <div class="exp">
-          <div class="edot" style="background:var(--muted)"></div>
-          <div>
-            <div class="exp-co">Pheuture Studio Pvt Ltd.</div>
-            <div class="exp-role" style="color:var(--sub)">Assoc. SDE &rarr; Junior SDE</div>
-            <div class="exp-info">Aug 2021 – Nov 2022 &nbsp;·&nbsp; Noida, India</div>
-            <div class="exp-tags">
-              <span class="exp-tag">Python</span>
-              <span class="exp-tag">Machine Learning</span>
-              <span class="exp-tag">Linux</span>
+        <div class="timeline-item fade-in">
+          <div class="glass-card">
+            <div class="exp-company">Pheuture Studio Pvt Ltd.</div>
+            <div class="exp-role">Associate Software Developer</div>
+            <div class="exp-period">Dec 2021 – Nov 2022 &nbsp;·&nbsp; 1 yr &nbsp;·&nbsp; Noida, Uttar Pradesh</div>
+            <div class="exp-skills">
+              <span class="exp-skill">Python</span>
+              <span class="exp-skill">Machine Learning</span>
+              <span class="exp-skill">Linux</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="glass-card">
+            <div class="exp-company">Pheuture Studio Pvt Ltd.</div>
+            <div class="exp-role">Junior Software Developer</div>
+            <div class="exp-period">Aug 2021 – Dec 2021 &nbsp;·&nbsp; 5 mos &nbsp;·&nbsp; Noida, Uttar Pradesh</div>
+            <div class="exp-skills">
+              <span class="exp-skill">Python</span>
+              <span class="exp-skill">Linux</span>
             </div>
           </div>
         </div>
 
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- EDUCATION -->
-    <section id="education">
-      <p class="sec-label">Education</p>
-      <div class="edu-row">
-        <div>
-          <div class="edu-degree">Bachelor of Technology</div>
-          <div class="edu-inst">AKTU — Dr. A.P.J. Abdul Kalam Technical University</div>
-        </div>
-        <div class="edu-year">2021</div>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-label fade-in">Let's Connect</p>
+      <h2 class="section-title fade-in">Contact</h2>
+      <div class="contact-grid">
+        <a href="mailto:agarwal.shashwat2012@gmail.com" class="glass-card contact-card fade-in">
+          <div class="contact-icon">✉</div>
+          <div class="contact-lbl">Email</div>
+          <div class="contact-val">agarwal.shashwat2012@gmail.com</div>
+        </a>
+        <a href="https://www.linkedin.com/in/agarwalshashwat07/" target="_blank" rel="noopener noreferrer" class="glass-card contact-card fade-in">
+          <div class="contact-icon" style="font-family: serif;">in</div>
+          <div class="contact-lbl">LinkedIn</div>
+          <div class="contact-val">agarwalshashwat07</div>
+        </a>
+        <a href="https://github.com/agarwalshashwat" target="_blank" rel="noopener noreferrer" class="glass-card contact-card fade-in">
+          <div class="contact-icon">&#10022;</div>
+          <div class="contact-lbl">GitHub</div>
+          <div class="contact-val">agarwalshashwat</div>
+        </a>
       </div>
-    </section>
-
-  </div>
+    </div>
+  </section>
 
   <footer>
-    <span>© 2026 Shashwat Agarwal</span>
-    <span><a href="https://shashwat.mithahara.com">shashwat.mithahara.com</a></span>
+    <p>&copy; 2026 Shashwat Agarwal &nbsp;·&nbsp; Deployed via GitHub Pages</p>
   </footer>
+
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>
