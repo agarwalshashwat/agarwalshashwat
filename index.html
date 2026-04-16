@@ -244,6 +244,77 @@
     }
     .contact-val { font-size: 0.88rem; font-weight: 600; word-break: break-all; }
 
+    /* ─── VENTURES ─── */
+    .venture-layout {
+      display: grid; grid-template-columns: 200px 1fr;
+      gap: 3rem; padding: 3rem 0;
+    }
+    .venture-meta { padding-top: 0.2rem; }
+    .venture-founded {
+      font-size: 0.73rem; font-weight: 600; color: var(--muted);
+      letter-spacing: 0.06em; text-transform: uppercase;
+      margin-bottom: 0.6rem; line-height: 1.6;
+    }
+    .venture-status {
+      display: inline-block; font-size: 0.65rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.2rem 0.6rem; border-radius: 2px;
+      background: rgba(45,90,67,0.1); color: var(--green);
+      margin-bottom: 1rem;
+    }
+    .venture-link {
+      display: block; font-size: 0.8rem; font-weight: 700;
+      color: var(--accent); text-decoration: none;
+      letter-spacing: 0.04em; transition: opacity 0.2s;
+    }
+    .venture-link:hover { opacity: 0.7; }
+    .venture-stat-strip {
+      display: flex; flex-wrap: wrap; gap: 0; margin-bottom: 2.2rem;
+      border: 1px solid var(--border); border-radius: 4px; overflow: hidden;
+    }
+    .venture-stat {
+      flex: 1; min-width: 100px;
+      padding: 1.1rem 1.2rem;
+      border-right: 1px solid var(--border);
+    }
+    .venture-stat:last-child { border-right: none; }
+    .venture-stat .stat-num { font-size: 1.7rem; }
+    .venture-stat .stat-lbl { font-size: 0.6rem; }
+    .venture-body p {
+      font-size: 0.97rem; color: var(--muted);
+      line-height: 1.95; margin-bottom: 1.3rem;
+    }
+    .venture-body p:last-of-type { margin-bottom: 0; }
+    .venture-callout {
+      border-left: 3px solid var(--accent);
+      background: rgba(201,122,78,0.05);
+      padding: 1.2rem 1.4rem;
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 1.6rem;
+    }
+    .venture-callout-label {
+      font-size: 0.65rem; font-weight: 700;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 0.4rem;
+    }
+    .venture-callout p {
+      font-size: 0.9rem; color: var(--text);
+      font-weight: 600; line-height: 1.6; margin: 0;
+    }
+    .value-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.8rem; }
+    .value-pill {
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.35rem 0.9rem; border-radius: 2px;
+      border: 1.5px solid var(--green); color: var(--green);
+    }
+    @media (max-width: 768px) {
+      .venture-layout { grid-template-columns: 1fr; gap: 1.5rem; }
+      .venture-stat-strip { flex-direction: column; }
+      .venture-stat { border-right: none; border-bottom: 1px solid var(--border); }
+      .venture-stat:last-child { border-bottom: none; }
+    }
+
     /* ─── FOOTER ─── */
     footer {
       padding: 2rem 3rem;
@@ -281,6 +352,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#ventures">Ventures</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -347,7 +419,7 @@
             startups.
           </p>
           <p>
-            Beyond code, I&rsquo;ve built and run a <span class="highlight">food business</span> &mdash;
+            Beyond code, I co-founded <a href="#ventures" style="color:var(--accent);font-weight:600;text-decoration:none;">Mithahara</a> &mdash; a healthy, hygienic &amp; sustainable breakfast venture &mdash;
             which taught me to think beyond features and into real-world impact, customer obsession,
             and operational excellence.
           </p>
@@ -500,11 +572,70 @@
     </div>
   </div>
 
+  <!-- VENTURES -->
+  <div class="section-wrap" id="ventures">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-num">04 &mdash; Ventures</span>
+        <h2 class="section-title">Mithahara</h2>
+      </div>
+      <div class="venture-layout">
+        <div class="venture-meta fade-in">
+          <div class="venture-founded">Founded<br>Jan 11, 2025</div>
+          <div class="venture-status">On Hiatus &middot; Comeback Soon</div>
+          <a href="https://mithahara.com" target="_blank" rel="noopener noreferrer" class="venture-link">mithahara.com &rarr;</a>
+        </div>
+        <div class="venture-body fade-in">
+          <div class="venture-stat-strip">
+            <div class="venture-stat"><div class="stat-num">&#8377;1L+</div><div class="stat-lbl">Monthly revenue</div></div>
+            <div class="venture-stat"><div class="stat-num">7</div><div class="stat-lbl">Dishes (all hits)</div></div>
+            <div class="venture-stat"><div class="stat-num">4</div><div class="stat-lbl">Employees</div></div>
+            <div class="venture-stat"><div class="stat-num">6</div><div class="stat-lbl">Months to scale</div></div>
+            <div class="venture-stat"><div class="stat-num">5&#x2F;5</div><div class="stat-lbl">Days per week</div></div>
+          </div>
+
+          <div class="venture-callout">
+            <div class="venture-callout-label">&#9733; Largest Order &mdash; Yoga Day 2025</div>
+            <p>Served 150 full meals (~450 plates) in a single day at a Yoga Day event in our area. Zero complaints. Total sell-out.</p>
+          </div>
+
+          <p>
+            My wife and I started Mithahara on a roadside stall from absolute zero &mdash; no investors, no backing, just a recipe we believed in
+            and a gap we saw in our area: nobody was serving <span class="highlight">healthy, hygienic and sustainable</span> breakfast at an
+            accessible price. Within six months we had four employees, seven dishes with dedicated fan bases for each, and over
+            <span class="highlight">&#8377;1 lakh in monthly revenue</span> operating only Monday to Friday.
+          </p>
+          <p>
+            We built something people genuinely loved. Customers called us, came to our home when we were on hiatus, and still ask when
+            we&rsquo;re coming back. We received investment interest from multiple individuals but turned them all down &mdash; we wanted
+            partners with skin in the game through effort, not just capital. Every class of person ate with us.
+            Simple things, done elegantly.
+          </p>
+          <p>
+            Our values weren&rsquo;t just a tagline. We used eco-friendly, biodegradable packaging. We paid salaries our employees
+            couldn&rsquo;t match working nine-hour days elsewhere. We believed <span class="highlight">money should be the last reason
+            a person shows up to work</span>. The business is on hiatus for family reasons &mdash; we are planning our comeback
+            and building toward making Mithahara a global brand, pioneering healthy and sustainable eating.
+          </p>
+
+          <div class="value-pills">
+            <span class="value-pill">Healthy</span>
+            <span class="value-pill">Hygienic</span>
+            <span class="value-pill">Sustainable</span>
+            <span class="value-pill">Eco-friendly packaging</span>
+            <span class="value-pill">5-day work week</span>
+            <span class="value-pill">People-first pay</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- CONTACT -->
   <div class="section-wrap" id="contact">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-num">04 &mdash; Contact</span>
+        <span class="section-num">05 &mdash; Contact</span>
         <h2 class="section-title">Let&rsquo;s Talk</h2>
       </div>
       <div class="contact-layout">
