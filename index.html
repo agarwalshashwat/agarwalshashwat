@@ -308,8 +308,30 @@
       padding: 0.35rem 0.9rem; border-radius: 2px;
       border: 1.5px solid var(--green); color: var(--green);
     }
+    .venture-item {
+      display: grid; grid-template-columns: 200px 1fr;
+      gap: 3rem; padding: 2.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .venture-num {
+      font-size: 2.5rem; font-weight: 900; color: var(--border);
+      letter-spacing: -0.04em; line-height: 1; margin-bottom: 0.6rem;
+    }
+    .venture-item-meta { padding-top: 0.2rem; }
+    .venture-item-name {
+      font-size: 1.3rem; font-weight: 800;
+      letter-spacing: -0.03em; margin-bottom: 1.5rem;
+    }
+    .venture-tag {
+      display: block; font-size: 0.65rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.2rem 0.6rem; border-radius: 2px; margin-bottom: 1rem;
+    }
+    .venture-tag-hiatus { background: rgba(45,90,67,0.1); color: var(--green); }
+    .venture-tag-pause  { background: rgba(201,122,78,0.1); color: var(--accent); }
     @media (max-width: 768px) {
       .venture-layout { grid-template-columns: 1fr; gap: 1.5rem; }
+      .venture-item   { grid-template-columns: 1fr; gap: 1rem; }
       .venture-stat-strip { flex-direction: column; }
       .venture-stat { border-right: none; border-bottom: 1px solid var(--border); }
       .venture-stat:last-child { border-bottom: none; }
@@ -579,13 +601,17 @@
         <span class="section-num">04 &mdash; Ventures</span>
         <h2 class="section-title">Mithahara</h2>
       </div>
-      <div class="venture-layout">
-        <div class="venture-meta fade-in">
+
+      <!-- 01: Breakfast Stall -->
+      <div class="venture-item fade-in">
+        <div class="venture-item-meta">
+          <div class="venture-num">01</div>
           <div class="venture-founded">Founded<br>Jan 11, 2025</div>
-          <div class="venture-status">On Hiatus &middot; Comeback Soon</div>
-          <a href="https://mithahara.com" target="_blank" rel="noopener noreferrer" class="venture-link">mithahara.com &rarr;</a>
+          <span class="venture-tag venture-tag-hiatus">On Hiatus &middot; Comeback Soon</span>
+          <a href="https://mithahara.com" target="_blank" rel="noopener noreferrer" class="venture-link" style="margin-top:0.8rem;">mithahara.com &rarr;</a>
         </div>
-        <div class="venture-body fade-in">
+        <div class="venture-item-body">
+          <div class="venture-item-name">Breakfast Stall</div>
           <div class="venture-stat-strip">
             <div class="venture-stat"><div class="stat-num">&#8377;1L+</div><div class="stat-lbl">Monthly revenue</div></div>
             <div class="venture-stat"><div class="stat-num">7</div><div class="stat-lbl">Dishes (all hits)</div></div>
@@ -628,6 +654,56 @@
           </div>
         </div>
       </div>
+
+      <!-- 02: Fiber Fruit Cups -->
+      <div class="venture-item fade-in" style="border-bottom: none; padding-bottom: 3rem;">
+        <div class="venture-item-meta">
+          <div class="venture-num">02</div>
+          <div class="venture-founded">2025</div>
+          <span class="venture-tag venture-tag-pause">On Pause &middot; Still Believe In It</span>
+        </div>
+        <div class="venture-item-body">
+          <div class="venture-item-name">Fiber Fruit Cups</div>
+          <div class="venture-stat-strip">
+            <div class="venture-stat"><div class="stat-num">35g+</div><div class="stat-lbl">Fiber per cup</div></div>
+            <div class="venture-stat"><div class="stat-num">6</div><div class="stat-lbl">Fruits in the mix</div></div>
+            <div class="venture-stat"><div class="stat-num">&#8377;60&ndash;80</div><div class="stat-lbl">Price per cup</div></div>
+            <div class="venture-stat"><div class="stat-num">120+</div><div class="stat-lbl">Cups (office order)</div></div>
+          </div>
+
+          <div class="venture-callout">
+            <div class="venture-callout-label">&#9733; Best Moment</div>
+            <p>Our office placed a bulk order of ~120 cups and we sold out completely at a local football event. Proof the product worked when it found the right crowd.</p>
+          </div>
+
+          <p>
+            After the breakfast stall went on hiatus, a close friend &mdash; a serious fitness enthusiast who had been deep in nutritional research &mdash;
+            brought me an overlooked insight: the fitness world obsesses over <span class="highlight">protein while under-indexing on fiber</span>,
+            which is equally critical for digestion and making protein absorption actually work. His idea: sell fresh fruit cups packed with at
+            least <span class="highlight">35g of fiber</span> per serving, making it easy for people to hit their daily fiber goals in one go.
+          </p>
+          <p>
+            We sourced fruits directly from the <span class="highlight">Mandi</span> &mdash; guava, apple, green apple, dragon fruit, kiwi, and
+            pomegranate &mdash; and assembled cups priced at &#8377;60&ndash;80. The product was genuinely good. The challenge: we were trying to
+            <span class="highlight">educate a market that wasn&rsquo;t yet asking the question</span>. Conversion was hard. Many people
+            hadn&rsquo;t heard of a daily fiber goal, and the price felt steep without that context. We didn&rsquo;t crack it this time.
+          </p>
+          <p>
+            I remain a <span class="highlight">strong believer in the idea</span>. The world is moving fast toward fiber-aware, gut-health-conscious
+            eating. We just needed to meet people where their awareness already was, rather than starting the conversation from scratch.
+            With the right marketing approach &mdash; leading with benefits people already care about &mdash; I&rsquo;d back this again.
+          </p>
+
+          <div class="value-pills">
+            <span class="value-pill">High-fiber</span>
+            <span class="value-pill">Fresh &amp; seasonal</span>
+            <span class="value-pill">Mandi-sourced</span>
+            <span class="value-pill">Gut-health focus</span>
+            <span class="value-pill">Learnings banked</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
