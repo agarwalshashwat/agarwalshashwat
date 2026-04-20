@@ -156,11 +156,12 @@
     }
     .about-avatar {
       width: 100%; aspect-ratio: 1;
-      background: var(--green); border-radius: 6px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 3.5rem; font-weight: 900;
-      color: rgba(255,255,255,0.9);
-      margin-bottom: 2rem; user-select: none;
+      border-radius: 6px; overflow: hidden;
+      margin-bottom: 2rem;
+    }
+    .about-avatar img {
+      width: 100%; height: 100%; object-fit: cover; object-position: center top;
+      display: block;
     }
     .stat-stack { display: flex; flex-direction: column; gap: 1.4rem; }
     .stat-num {
@@ -424,7 +425,7 @@
       </div>
       <div class="about-layout">
         <div class="fade-in">
-          <div class="about-avatar">S</div>
+          <div class="about-avatar"><img src="image.png" alt="Shashwat Agarwal" /></div>
           <div class="stat-stack">
             <div><div class="stat-num">4.5+</div><div class="stat-lbl">Years exp</div></div>
             <div><div class="stat-num">4</div><div class="stat-lbl">Companies</div></div>
