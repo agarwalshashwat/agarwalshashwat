@@ -183,6 +183,8 @@ h1.hero-name .line-accent { color: var(--accent); }
 .skill-tag:hover { border-color: var(--accent); color: var(--accent); }
 .skill-tag i[class^="devicon"] { font-size: 1.05rem; flex-shrink: 0; line-height: 1; }
 .skill-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+.skill-category-label { width: 100%; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-top: 1rem; padding-bottom: 0.1rem; }
+.skill-category-label:first-child { margin-top: 0; }
 
 /* ─── EXPERIENCE ─── */
 .exp-item {
