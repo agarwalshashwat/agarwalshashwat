@@ -322,3 +322,76 @@ if (prefersMotion) {
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
 })();
 
+// ─── 14. WORD-SPLIT SECTION TITLE REVEAL ───────────────────────────────────
+if (prefersMotion) {
+  (function () {
+    const titles = document.querySelectorAll('.section-title');
+    titles.forEach(title => {
+      const words = title.textContent.split(/\s+/).filter(w => w.length > 0);
+      title.textContent = '';
+      words.forEach((word, i) => {
+        const wrap  = document.createElement('span');
+        wrap.className = 'word-wrap';
+        const inner = document.createElement('span');
+        inner.className = 'word-inner';
+        inner.style.setProperty('--wi', i);
+        inner.textContent = word;
+        wrap.appendChild(inner);
+        title.appendChild(wrap);
+        if (i < words.length - 1) title.appendChild(document.createTextNode('\u00a0'));
+      });
+    });
+
+    const titleObs = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach(e => {
+          if (!e.isIntersecting) return;
+          e.target.classList.add('revealed');
+          obs.unobserve(e.target);
+        });
+      },
+      { threshold: 0.3 }
+    );
+    titles.forEach(t => titleObs.observe(t));
+  })();
+}
+
+// ─── 15. SECTION HEADER LINE DRAW ──────────────────────────────────────────
+(function () {
+  const lineObs = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('line-drawn');
+        obs.unobserve(e.target);
+      });
+    },
+    { threshold: 0.15 }
+  );
+  document.querySelectorAll('.section-header').forEach(h => lineObs.observe(h));
+})();
+
+// ─── 16. ABOUT PHOTO PARALLAX ──────────────────────────────────────────────
+if (prefersMotion) {
+  (function () {
+    const avatar    = document.querySelector('.about-avatar');
+    const avatarImg = avatar?.querySelector('img');
+    if (!avatar || !avatarImg) return;
+
+    // Slightly oversize the img so parallax doesn't reveal the container bg
+    avatarImg.style.height = '118%';
+    avatarImg.style.marginTop = '-9%';
+    avatarImg.style.objectFit = 'cover';
+
+    function updateParallax() {
+      const rect   = avatar.getBoundingClientRect();
+      const center = rect.top + rect.height / 2;
+      const delta  = (center - window.innerHeight / 2) * 0.14;
+      avatarImg.style.transform = `translateY(${Math.max(-28, Math.min(28, delta))}px)`;
+    }
+
+    window.addEventListener('scroll', updateParallax, { passive: true });
+    updateParallax();
+  })();
+}
+
