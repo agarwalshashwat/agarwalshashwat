@@ -197,6 +197,48 @@ h1.hero-name .line-accent { color: var(--accent); }
 .about-body p:last-child { margin-bottom: 0; }
 .highlight { color: var(--accent); font-weight: 600; }
 
+/* ─── WHAT I BELIEVE ─── */
+.beliefs {
+  border-top: 1px solid var(--border);
+  padding: 3rem 0 1rem;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 3rem;
+}
+.beliefs-label {
+  font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--accent); padding-top: 0.2rem;
+  position: sticky; top: 5.5rem; align-self: start;
+}
+.beliefs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+.belief-item {
+  padding: 1.8rem 2rem 1.8rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.belief-item:nth-child(odd) {
+  border-right: 1px solid var(--border);
+  padding-right: 2rem;
+}
+.belief-item:nth-child(even) {
+  padding-left: 2rem;
+  padding-right: 0;
+}
+.belief-item:nth-last-child(-n+2) { border-bottom: none; }
+.belief-num {
+  font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.15em; color: var(--accent);
+  margin-bottom: 0.7rem;
+}
+.belief-text {
+  font-size: 0.93rem; line-height: 1.8;
+  color: var(--muted);
+}
+
 /* ─── SKILLS ─── */
 .skills-layout {
   display: grid; grid-template-columns: 200px 1fr;
@@ -587,6 +629,13 @@ footer {
   footer { flex-direction: column; gap: 0.5rem; text-align: center; }
   .venture-layout { grid-template-columns: 1fr; gap: 1.5rem; }
   .venture-item   { grid-template-columns: 1fr; gap: 1rem; }
+  .beliefs { grid-template-columns: 1fr; gap: 1rem; }
+  .beliefs-label { position: static; }
+  .beliefs-grid { grid-template-columns: 1fr; }
+  .belief-item:nth-child(odd) { border-right: none; padding-right: 0; }
+  .belief-item:nth-child(even) { padding-left: 0; }
+  .belief-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--border); }
+  .belief-item:last-child { border-bottom: none; }
   .now-cards { grid-template-columns: 1fr; }
   .venture-stat-strip { flex-direction: column; }
   .venture-stat { border-right: none; border-bottom: 1px solid var(--border); }
