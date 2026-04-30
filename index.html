@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="scroll-bar" aria-hidden="true"></div>
 
   <!-- NAV -->
   <nav>
@@ -29,26 +30,26 @@
   <section class="hero">
     <div class="container">
       <div class="hero-top">
-        <div class="hero-eyebrow">Portfolio &mdash; 2026</div>
+        <div class="hero-eyebrow hero-anim" style="--d:0.1s">Portfolio &mdash; 2026</div>
         <h1 class="hero-name">
-          Shashwat<br><span class="line-accent">Agarwal</span>
+          <span class="hero-line hero-anim" style="--d:0.25s">Shashwat</span><br><span class="hero-line line-accent hero-anim" style="--d:0.45s">Agarwal</span>
         </h1>
       </div>
       <div class="hero-bottom">
         <div>
-          <p class="hero-role">SDE II &nbsp;&middot;&nbsp; AI Engineer &nbsp;&middot;&nbsp; Vibecoder</p>
-          <p class="hero-desc">
+          <p class="hero-role hero-anim" style="--d:0.65s">SDE II &nbsp;&middot;&nbsp; AI Engineer &nbsp;&middot;&nbsp; Vibecoder</p>
+          <p class="hero-desc hero-anim" style="--d:0.8s">
             4.5+ years building robust backend systems and AI-powered products.
             Operating at the intersection of engineering discipline and AI creativity &mdash;
             shipping things that work, with the depth to catch what AI misses.
           </p>
         </div>
         <div class="hero-right">
-          <div class="hero-available">
+          <div class="hero-available hero-anim" style="--d:0.95s">
             <span class="status-dot"></span>
             Open to opportunities
           </div>
-          <div class="hero-cta">
+          <div class="hero-cta hero-anim" style="--d:1.05s">
             <a href="#contact" class="btn btn-primary">Get in touch</a>
             <a href="#experience" class="btn btn-secondary">Experience</a>
           </div>
@@ -68,9 +69,9 @@
         <div class="fade-in">
           <div class="about-avatar"><img src="image.png" alt="Shashwat Agarwal" /></div>
           <div class="stat-stack">
-            <div><div class="stat-num" id="years-exp">4.5+</div><div class="stat-lbl">Years exp</div></div>
-            <div><div class="stat-num">4</div><div class="stat-lbl">Companies</div></div>
-            <div><div class="stat-num">10+</div><div class="stat-lbl">AI projects</div></div>
+            <div><div class="stat-num" id="years-exp" data-count="4.5" data-suffix="+">4.5+</div><div class="stat-lbl">Years exp</div></div>
+            <div><div class="stat-num" data-count="4" data-suffix="">4</div><div class="stat-lbl">Companies</div></div>
+            <div><div class="stat-num" data-count="10" data-suffix="+">10+</div><div class="stat-lbl">AI projects</div></div>
             <div><div class="stat-num">&#8734;</div><div class="stat-lbl">Curiosity</div></div>
           </div>
         </div>
@@ -110,7 +111,7 @@
       </div>
       <div class="skills-layout">
         <div></div>
-        <div class="skills-grid fade-in" style="padding: 1rem 0 3rem;">
+        <div class="skills-grid" style="padding: 1rem 0 3rem;">
 
           <div class="skill-category-label">Languages</div>
           <div class="skill-tag"><i class="devicon-python-plain colored"></i>Python</div>
@@ -169,7 +170,7 @@
         <h2 class="section-title">Career</h2>
       </div>
 
-      <div class="exp-item fade-in">
+      <div class="exp-item">
         <div class="exp-meta">
           <div class="exp-period">Feb 2023<br>Present</div>
           <div class="exp-badge">Current</div>
@@ -193,7 +194,7 @@
         </div>
       </div>
 
-      <div class="exp-item fade-in">
+      <div class="exp-item">
         <div class="exp-meta">
           <div class="exp-period">Dec 2022<br>Feb 2023</div>
         </div>
@@ -211,7 +212,7 @@
         </div>
       </div>
 
-      <div class="exp-item fade-in" style="border-bottom: none;">
+      <div class="exp-item" style="border-bottom: none;">
         <div class="exp-meta">
           <div class="exp-period">Aug 2021<br>Nov 2022</div>
         </div>
@@ -243,7 +244,7 @@
       </div>
 
       <!-- 01: Breakfast Stall -->
-      <div class="venture-item fade-in">
+      <div class="venture-item">
         <div class="venture-item-meta">
           <div class="venture-num">01</div>
           <div class="venture-founded">Founded<br>Jan 11, 2025</div>
@@ -296,7 +297,7 @@
       </div>
 
       <!-- 02: Fiber Fruit Cups -->
-      <div class="venture-item fade-in">
+      <div class="venture-item">
         <div class="venture-item-meta">
           <div class="venture-num">02</div>
           <div class="venture-founded">2025</div>
@@ -344,7 +345,7 @@
       </div>
 
       <!-- 03: ClipMark -->
-      <div class="venture-item fade-in" style="border-bottom: none; padding-bottom: 3rem;">
+      <div class="venture-item" style="border-bottom: none; padding-bottom: 3rem;">
         <div class="venture-item-meta">
           <div class="venture-num">03</div>
           <div class="venture-founded">Idea: Late 2022<br>Build: Mar 2026</div>
@@ -443,6 +444,9 @@
     <span>Last updated: April 2026</span>
     <span>Deployed via GitHub Pages</span>
   </footer>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
 
   <script src="script.js"></script>
 
