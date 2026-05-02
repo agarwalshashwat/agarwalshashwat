@@ -626,9 +626,12 @@ footer {
   .skills-layout > :first-child,
   .contact-layout > :first-child { display: none; }
   .exp-item { grid-template-columns: 1fr; gap: 0.4rem; }
+  .exp-meta { position: static; }
   footer { flex-direction: column; gap: 0.5rem; text-align: center; }
   .venture-layout { grid-template-columns: 1fr; gap: 1.5rem; }
   .venture-item   { grid-template-columns: 1fr; gap: 1rem; }
+  .venture-item-meta { position: static; }
+  .section-num { position: static; }
   .beliefs { grid-template-columns: 1fr; gap: 1rem; }
   .beliefs-label { position: static; }
   .beliefs-grid { grid-template-columns: 1fr; }
