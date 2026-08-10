@@ -7,7 +7,7 @@ document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
 
 // ─── 2. DYNAMIC YEARS OF EXPERIENCE ────────────────────────────────────────
 (function () {
-  const start = new Date(2021, 7, 1); // Aug 2021
+  const start = new Date(2021, 7, 2); // 2 Aug 2021 — first day at Pheuture
   const now = new Date();
   const years = (now - start) / (1000 * 60 * 60 * 24 * 365.25);
   const floored = Math.floor(years * 2) / 2;
