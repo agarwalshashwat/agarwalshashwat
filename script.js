@@ -11,11 +11,19 @@ document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
   const now = new Date();
   const years = (now - start) / (1000 * 60 * 60 * 24 * 365.25);
   const floored = Math.floor(years * 2) / 2;
+  const label = floored + '+';
+
   const el = document.getElementById('years-exp');
   if (el) {
-    el.textContent = floored + '+';
+    el.textContent = label;
     el.dataset.count = floored;
   }
+
+  // Keep prose mentions in sync with the stat, so the two can never drift.
+  document.querySelectorAll('[data-years]').forEach(node => { node.textContent = label; });
+
+  const meta = document.querySelector('meta[name="description"]');
+  if (meta) meta.content = meta.content.replace(/\d+(?:\.\d+)?\+ years/, label + ' years');
 })();
 
 // ─── 3. STATS COUNT-UP ──────────────────────────────────────────────────────
