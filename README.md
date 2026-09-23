@@ -86,3 +86,13 @@ Bookmark any YouTube moment, Revisit saved sections in sequence, Share clips, an
 [![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:agarwal.shashwat2012@gmail.com)
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/agarwalshashwat)
 [![Portfolio](https://img.shields.io/badge/-Portfolio-c97a4e?style=flat-square&logoColor=white)](https://shashwat.mithahara.com)
+
+---
+
+### Contribution graph
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/agarwalshashwat/agarwalshashwat/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/agarwalshashwat/agarwalshashwat/output/github-snake.svg" />
+  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/agarwalshashwat/agarwalshashwat/output/github-snake.svg" />
+</picture>
