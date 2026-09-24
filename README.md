@@ -57,7 +57,7 @@
 ## 💼 Experience
 
 **SDE III · Team Lead — Idea Clan** _(Feb 2023 – Present · Panchkula, India)_
-Joined the founding Python team as an IC, promoted to SDE II & Team Lead within a year, and to SDE III since. Backend lead on two MarTech products — **FabFunnel**, the external-facing platform our clients' media buyers work in, and **Lookfinity**, the internal platform for in-house teams. Every ad network runs on nearly the same campaign structure, but each names things differently and each is missing something the others have — so media buyers were launching platform by platform, by hand, at volume. I designed a centralized service that takes **one configuration and fans it out across every network**, scaled to **2,000 ads/minute** in production; the quarter after launch came within reach of the previous full year's volume. The Python work started because Google's Ads SDK was first-class in Python while our stack was Node: I built the company's first Python reporting service around it, which opened the door to AI creative generation conditioned on geography, keywords and psychological triggers. Also a video hashing system — near-identical creatives were crowding out the top-performer leaderboard — and an ad-library intelligence service built on public ad libraries only.
+Joined the founding Python team as an IC, promoted to SDE II & Team Lead within a year, and to SDE III in September 2026. Backend lead on two MarTech products — **FabFunnel**, the external-facing platform our clients' media buyers work in, and **Lookfinity**, the internal platform for in-house teams. Every ad network runs on nearly the same campaign structure, but each names things differently and each is missing something the others have — so media buyers were launching platform by platform, by hand, at volume. I designed a centralized service that takes **one configuration and fans it out across every network**, scaled to **2,000 ads/minute** in production; the quarter after launch came within reach of the previous full year's volume. The Python work started because Google's Ads SDK was first-class in Python while our stack was Node: I built the company's first Python reporting service around it, which opened the door to AI creative generation conditioned on geography, keywords and psychological triggers. Also a video hashing system — near-identical creatives were crowding out the top-performer leaderboard — and an ad-library intelligence service built on public ad libraries only.
 
 **Software Engineer (Contract) — Samsride** _(Dec 2022 – Feb 2023 · Remote)_
 Full-Stack Python Developer on the Innovations Refund platform, across Django and React on a tight timeline. I took it because the problem was good, not because I needed a bridge: a centralized FinTech platform where banks aggregate and loan flows originate in one place. Centralization was the interesting part — structurally the same problem I'd go on to solve for ad networks a year later.
@@ -71,11 +71,11 @@ First professional role. Built WhatsApp and Shopify connectors on the Odoo platf
 
 ## 🚀 Shipped
 
-Three Chrome extensions, all live on the Web Store. Manifest V3, built with Vite, everything on-device — no accounts, no servers, no telemetry.
+Three Chrome extensions, all live on the Web Store — Manifest V3, built with Vite, everything on-device: no accounts, no servers, no telemetry. Plus the ad-platform work I lead at Idea Clan.
 
 ### [Duckout](https://chromewebstore.google.com/detail/duckout/cidmppedihmfmcjhkneigccpgebooldp) — Screen-share privacy _(Live)_
 
-One key takes the tab you're on off the screen — or swaps it for an innocuous decoy page — before you share your screen or someone walks past. The tab is never closed: it keeps running in the background, so a half-typed form, a logged-in session and a playing video all come back exactly as you left them. Every competitor closes tabs and reloads the URL, which is the thing their reviews complain about. Two permissions, no page access.
+One key takes the tab you're on off the screen — or swaps it for an innocuous decoy page — before you share your screen or someone walks past. The tab is never closed: it keeps running in the background, so a half-typed form, a logged-in session and a playing video all come back exactly as you left them. Most competitors close tabs and reload the URL, which is the thing their reviews complain about. Two permissions, no page access.
 
 ### [Formseed](https://chromewebstore.google.com/detail/formseed/gemloodfelgkgedaalhimloiecnpfejd) — Realistic test data _(Live)_
 
