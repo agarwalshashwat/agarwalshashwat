@@ -97,7 +97,7 @@ function staggerSection(sectionId, itemSelector, delay) {
   obs.observe(section);
 }
 staggerSection('#experience', '.exp-item', 80);
-staggerSection('#ventures',   '.venture-item', 80);
+staggerSection('#beyond',     '.venture-item', 80);
 
 // ─── 6. NAV HIDE ON SCROLL-DOWN ────────────────────────────────────────────
 (function () {
@@ -167,7 +167,7 @@ staggerSection('#ventures',   '.venture-item', 80);
     { el: document.querySelector('#about'),        num: '01'    },
     { el: document.querySelector('#skills'),       num: '02'    },
     { el: document.querySelector('#experience'),   num: '03'    },
-    { el: document.querySelector('#ventures'),     num: '04'    },
+    { el: document.querySelector('#beyond'),       num: '04'    },
     { el: document.querySelector('#contact'),      num: '05'    },
   ].filter(s => s.el);
 
@@ -200,8 +200,8 @@ staggerSection('#ventures',   '.venture-item', 80);
   console.log('%cYou opened DevTools. Respect.', s.b);
   console.log('%c─────────────────────────────────', s.b);
   console.log('%cBuilt by  →  Shashwat Agarwal', s.b);
-  console.log('%cRole      →  SDE II & AI Engineer', s.b);
-  console.log('%cStack     →  Python · FastAPI · LLMs · RAG', s.b);
+  console.log('%cRole      →  SDE III · Senior Python Engineer', s.b);
+  console.log('%cStack     →  Python · FastAPI · Ad Platform APIs · LLMs', s.b);
   console.log('%c─────────────────────────────────', s.b);
   console.log('%c✉  agarwal.shashwat2012@gmail.com', s.l);
   console.log('%c🔗 linkedin.com/in/agarwalshashwat07', s.l);
