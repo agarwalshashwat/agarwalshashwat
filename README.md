@@ -91,12 +91,6 @@ Two products on shared ad-launch and reporting infrastructure. **FabFunnel** is 
 
 ---
 
-## 📊 GitHub Activity
-
-![GitHub Contribution Graph](https://ghchart.rshah.org/agarwalshashwat)
-
----
-
 ## 🔗 Connect
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/agarwalshashwat07/)
