@@ -29,6 +29,7 @@
 - 🦆 **[Duckout](https://chromewebstore.google.com/detail/duckout/cidmppedihmfmcjhkneigccpgebooldp)** — Hide your tabs, or swap in a decoy page, before you share your screen. **Live.**
 - 🌱 **[Formseed](https://chromewebstore.google.com/detail/formseed/gemloodfelgkgedaalhimloiecnpfejd)** — Realistic test data for any form, generated on-device. **Live.**
 - 🔖 **[ClipMark](https://chromewebstore.google.com/detail/clipmark/iboippnihpcnnglgboaiedaiimbiolgg)** — Turn YouTube into a knowledge tool: notes, flashcards, spaced repetition. **Live.**
+- 🧩 **[Odoo Apps by Mithahara](https://apps.odoo.com/apps/modules/browse?author=Mithahara)** — 108 small apps for Odoo 19 & 20: compliance, inventory reports, access rights, ad-platform connectors. **Live.**
 
 ---
 
@@ -71,7 +72,7 @@ First professional role. Built WhatsApp and Shopify connectors on the Odoo platf
 
 ## 🚀 Shipped
 
-Three Chrome extensions, all live on the Web Store — Manifest V3, built with Vite, everything on-device: no accounts, no servers, no telemetry. Plus the ad-platform work I lead at Idea Clan.
+Three Chrome extensions, all live on the Web Store — Manifest V3, built with Vite, everything on-device: no accounts, no servers, no telemetry. 108 apps on the Odoo App Store, and a Codex plugin for Odoo. Plus the ad-platform work I lead at Idea Clan.
 
 ### [Duckout](https://chromewebstore.google.com/detail/duckout/cidmppedihmfmcjhkneigccpgebooldp) — Screen-share privacy _(Live)_
 
@@ -84,6 +85,14 @@ Fills any form with plausible test data in one click, generated entirely on-devi
 ### [ClipMark](https://chromewebstore.google.com/detail/clipmark/iboippnihpcnnglgboaiedaiimbiolgg) — YouTube as a knowledge tool _(Live)_
 
 In late 2022, deep in long YouTube tutorials as a junior engineer, I kept hitting the same wall: there was no way to save what you found. Come back after two days and you'd scroll for ten minutes to relocate a single explanation. The idea sat with me for years; in March 2026 I built it. Bookmark any moment, revisit saved sections in sequence, turn them into flashcards, and let spaced repetition make it stick. Built for students, creators and developers who learn from YouTube.
+
+### [Odoo Apps by Mithahara](https://apps.odoo.com/apps/modules/browse?author=Mithahara) — 108 apps for Odoo 19 & 20 _(Live)_
+
+Small, single-purpose apps, 54 free and 54 paid: compliance work such as GDPR retention, Romanian SAF-T and US 1099 reporting, inventory reports, access-rights tooling and ad-platform connectors. Every app has a narrated demo video on [YouTube](https://www.youtube.com/@MithaharaApps) and its own page on [mithahara.com](https://mithahara.com/odoo-apps/).
+
+### [Odoo for Codex](https://github.com/Mithahara/odoo-codex-plugin) — Read-only skills _(Live)_
+
+A Codex plugin that lets you ask questions of your own Odoo: overdue invoices, who can see a model, the history of a record. It talks to an Odoo MCP endpoint you run, through read-only tools, so nothing is written and no data leaves your server.
 
 ### MarTech automation — FabFunnel & Lookfinity _(@ Idea Clan)_
 
